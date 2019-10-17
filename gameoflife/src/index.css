@@ -1,13 +1,22 @@
+body, html {
+  height: 100%;
+}
+
 body {
-  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png) 
+  background: url(water-background.jpg);
+  /* Set to 98 vs 100 to prevent white strip on bottom of board */
+  height: 98%;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-size: 100% 100%;
 }
   
 .box {
   display: inline-block;       
   border: 1px solid black;
-  width: 15px;
-  height: 15px;
-  margin-left: -1px;
+  width: 100px;
+  height: 100px;
   margin-bottom: -1px;
   }
 
@@ -34,17 +43,31 @@ body {
   line-height: 0;
   margin: auto;
   box-shadow: 0px 0px 20px white;
-  margin-top: 20px;
+  margin-top: 10%;
+  margin-bottom: auto;
 }
   
-h1, h2, h3, h4 {
-  color: white;
+ h1 {
   margin: auto;
   text-align: center;
   width: 50%;
   margin-top: 10px;
+  background-color: blue;
+  border-radius: 10px;
 }
 
-h4 {
-  margin-top: 0px;
+h1 span:nth-child(1){
+  color: blueviolet;
+}
+
+h1 span:nth-child(2){
+  color: lightgreen;
+}
+
+h1 span:nth-child(3){
+  color: yellow;
+}
+
+h1 span:nth-child(4){
+  color: hotpink;
 }

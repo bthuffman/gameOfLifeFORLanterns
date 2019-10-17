@@ -1,3 +1,6 @@
+#Repo source
+https://github.com/beaucarnes/fcc-project-tutorials/tree/master/gameoflife
+
 # Video Project Tutorials
 
 Here is the code for project tutorials Beau Carnes has created for freeCodeCamp. 
