@@ -12,8 +12,10 @@ class Box extends React.Component {
 			<div
 				className={this.props.boxClass}
 				id={this.props.id}
-				// onClick={this.selectBox}
-				onClick={() => console.log(this.props.row, this.props.col)}
+				onClick={this.selectBox}
+				// onClick={() => 
+				// 	console.log(this.props.row, this.props.col)
+				// }
 			/>
 		);
 	}
@@ -64,18 +66,17 @@ class Main extends React.Component {
 
 	selectBox = (row, col) => {
 		let gridCopy = arrayClone(this.state.gridFull);
-		console.log(Box.row);
 		gridCopy[row][col] = !gridCopy[row][col];
+		console.log(row, col);
 		this.setState({
 			gridFull: gridCopy
 		});
 	}
 
+	//place a starting lakeTile
 	seed = () => {
 		let gridCopy = arrayClone(this.state.gridFull);
-
-					gridCopy[1][1] = true;
-
+		gridCopy[1][1] = true;
 		this.setState({
 			gridFull: gridCopy
 		});
@@ -90,8 +91,8 @@ class Main extends React.Component {
 			<div>
 				<h1>
 					<span>Lanterns: </span>
-					<span>The </span> 
-					<span>Harvest </span> 
+					<span>The </span>
+					<span>Harvest </span>
 					<span>Festival</span>
 				</h1>
 				<Grid
